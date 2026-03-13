@@ -1,0 +1,43 @@
+{
+  "name": "cdp-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI tool for browser automation and debugging using Chrome DevTools Protocol via Model Context Protocol",
+  "main": "cli.js",
+  "bin": {
+    "cdp-cli": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "keywords": [
+    "chrome",
+    "devtools",
+    "cdp",
+    "mcp",
+    "browser-automation",
+    "testing",
+    "debugging",
+    "screenshot",
+    "cli",
+    "openclaw",
+    "skill"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/cdp-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/cdp-cli/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/cdp-cli#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "commander": "^12.0.0"
+  }
+}
